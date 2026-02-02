@@ -1,6 +1,6 @@
-FROM openjdk:17
+FROM eclipse-temurin:17-jre
 
-ADD target/javaexpress-springboot-docker.jar javaexpress-springboot-docker.jar
+COPY target/javaexpress-springboot-docker.jar javaexpress-springboot-docker.jar
 
 EXPOSE 8080
 
